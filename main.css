@@ -1,0 +1,191 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.75em;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  position: relative;
+}
+
+nav img {
+  display: inline-block;
+  width: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 100px;
+}
+
+nav ul {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 70px;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+nav ul a:link {
+  color: black;
+}
+
+nav ul a:visited {
+  color: black;
+}
+
+nav ul a:active {
+    color: black;
+}
+
+nav ul li:hover {
+  background-color: rgba(0,0,0,.8);
+  cursor: pointer;
+  transition: background-color 1s;
+  color: white;
+}
+
+.leading-letter {
+  font-size: 6em;
+  font-family: fantasy;
+  margin-bottom: -54px;
+  display: inline-block;
+}
+
+.portrait img {
+  width: 100%;
+}
+
+.citation {
+  font-style: italic;
+}
+
+.img-left {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.img-right {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.img-right:nth-of-type(1) {
+  margin-top: 77px;
+}
+
+.film-description {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -20px;
+  font-size: 22px;
+  margin-left: -115px;
+}
+
+.film-img {
+  display: inline-block;
+  width: 47%;
+  padding: 5px;
+}
+
+.film-img img {
+  width: 70%;
+}
+
+.section-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blockquote {
+  position: relative;
+  border: 3px solid gray;
+  border-radius: 8px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+div.blockquote:nth-of-type(odd)::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 20px solid gray;
+}
+
+div.blockquote:nth-of-type(even)::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 20px solid gray;
+  right: 20px;
+}
+
+div.blockquote > p:nth-of-type(1) {
+  font-size: 1.5em;
+}
+
+div.blockquote > p:nth-of-type(2) {
+  font-style: italic;
+  font-size: 1em;
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+img.quote-image {
+  margin-bottom: 15px;
+  border-radius: 100%;
+}
+
+img.quote-image:nth-of-type(even) {
+  float: right;
+}
+
+.clearfix::after {
+  visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.trivia-item {
+  margin-left: 10px;
+  font-size: 1.25em;
+  font-family: "PT Sans";
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wiggle:hover {
+  animation: wiggle .25s;
+}
